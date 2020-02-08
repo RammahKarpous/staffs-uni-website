@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+$primary-color: #5FE2A8;
+$secondary-color: #48CB90;
+
+$white: #ffffff;
+$gray: #F7F7F7;
+$darker-gray: #E6E6E6;
+
+$primary-dark-color: #232A36;
+$secondary-dark-color: #1E242E;
+
+$gradient: lenear-gradient(45deg #5C7193, #57B9BA);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
