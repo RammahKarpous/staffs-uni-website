@@ -12,6 +12,14 @@ a, p, label {
   color: #0A2740;
 }
 
+.alt-link {
+  color: #57078C;
+  display: inline-block;
+}
+.alt-link:hover {
+  color: #851DE0;
+}
+
 input, select, button {
   -webkit-appearance: none;
   outline-style: none;
@@ -28,6 +36,10 @@ input, select, button {
   gap: 20px;
 }
 
+.no-gap {
+  gap: 0;
+}
+
 .grid-2 {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -36,12 +48,28 @@ input, select, button {
   display: flex;
 }
 
+.align-center {
+  align-items: center;
+}
+
+.column {
+  flex-flow: column;
+}
+
 .space-around {
   justify-content: space-around;
 }
 
 .space-between {
   justify-content: space-between;
+}
+
+.space-center {
+  justify-content: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
 }
 
 .button {
@@ -64,12 +92,6 @@ input, select, button {
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
-.header .page-heading {
-  font-size: 5em;
-  margin: 0;
-  color: #ffffff;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
 
 .header--small {
   width: 500px;
@@ -82,6 +104,22 @@ input, select, button {
 .wrapper {
   width: 1520px;
   margin: auto;
+}
+
+.section {
+  margin-top: 150px;
+}
+
+.page-heading {
+  font-size: 5em;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-heading {
+  text-transform: uppercase;
+  font-size: 40px;
 }
 
 .nav {
@@ -215,6 +253,37 @@ input, select, button {
 .header .form-wrapper .form .form__search-input button img {
   width: 16px;
   margin-right: 10px;
+}
+
+.events-section .event {
+  grid-template-columns: 150px 1fr;
+}
+.events-section .event .event__date {
+  background: #0A2740;
+  width: 150px;
+  height: 100%;
+}
+.events-section .event .event__date p {
+  color: #ffffff;
+  margin: 0;
+}
+.events-section .event .event__date .day {
+  font-size: 3em;
+  font-weight: 700;
+}
+.events-section .event .event__date .month {
+  font-size: 1.4em;
+}
+.events-section .event .event__content {
+  padding: 15px;
+  background: #F5F5F5;
+}
+.events-section .event .event__content .event-heading {
+  margin: 5px 0;
+  font-size: 28px;
+}
+.events-section .event .event__content .event-content {
+  margin: 5px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

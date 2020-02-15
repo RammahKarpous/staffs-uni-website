@@ -43,7 +43,7 @@
     }
 }
 
-// Banner
+// Header styling
 .header {
     background: url('../images/headers/gallery-images/success.jpg');
 
@@ -161,3 +161,46 @@
         }
     }
 }
+
+// Events Styling
+.events-section {
+    .event {
+        grid-template-columns: 150px 1fr;
+
+        .event__date {
+            background: $fourth-color;
+            width: 150px;
+            height: 100%;
+
+            p {
+                color: $white;
+                margin: 0;
+            }
+
+            .day {
+                font-size: 3em;
+                font-weight: 700;
+            }
+
+            .month {
+                font-size: 1.4em;
+            }
+        }
+
+        .event__content {
+            padding: 15px;
+            background: $gray;
+
+            .event-heading {
+                margin: 5px 0;
+                font-size: 28px;
+            }
+
+            .event-content {
+                margin: 5px 0;
+            } 
+        }
+    }
+}
+
+// Courses styling

@@ -25,12 +25,22 @@ a, p, label {
     color: $fourth-color;
 }
 
+.alt-link {
+    color: $secondary-color;
+    display: inline-block;
+
+    &:hover {
+        color: $main-color;
+    }
+}
+
 input, select, button {
     -webkit-appearance: none;
     outline-style: none;
     border: none;
     border-radius: 0px;
 }
+
 
 .white-color {
     color: $white;
@@ -42,6 +52,10 @@ input, select, button {
     gap: 20px;
 }
 
+.no-gap {
+    gap: 0;
+}
+
 .grid-2 {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -50,12 +64,28 @@ input, select, button {
     display: flex;
 }
 
+.align-center {
+    align-items: center;
+}
+
+.column {
+    flex-flow: column;
+}
+
 .space-around {
     justify-content: space-around;
 }
 
 .space-between {
     justify-content: space-between;
+}
+
+.space-center {
+    justify-content: center;
+}
+
+.flex-start {
+    justify-content: flex-start;
 }
 
 // Components
@@ -80,13 +110,6 @@ input, select, button {
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-
-    .page-heading {
-        font-size: 5em;
-        margin: 0;
-        color: $white;
-        text-shadow: 0px 0px 10px transparentize($black, 0.7);
-    }
 }
 
 .header--small {
@@ -97,8 +120,25 @@ input, select, button {
     height: 800px;
 }
 
-// Wrapper
+// Containers
 .wrapper {
     width: 1520px;
     margin: auto;
+}
+
+.section {
+    margin-top: 150px;
+}
+
+// Headings
+.page-heading {
+    font-size: 5em;
+    margin: 0;
+    color: $white;
+    text-shadow: 0px 0px 10px transparentize($black, 0.7);
+}
+
+.section-heading {
+    text-transform: uppercase;
+    font-size: 40px;
 }
