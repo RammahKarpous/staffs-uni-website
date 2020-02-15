@@ -25,6 +25,39 @@ a, p, label {
     color: $fourth-color;
 }
 
+input, select, button {
+    -webkit-appearance: none;
+    outline-style: none;
+    border: none;
+    border-radius: 0px;
+}
+
+.white-color {
+    color: $white;
+}
+
+// Display
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.flex {
+    display: flex;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
 // Components
 .button {
     background: $main-color;

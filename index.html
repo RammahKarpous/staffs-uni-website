@@ -43,8 +43,24 @@
             <div class="dot"></div>
         </div>
 
-        
-        
+        <div class="form-wrapper">
+            <div class="wrapper">
+                <form class="form grid">
+                    <label for="course-name" class="white-color">Search courses</label>
+
+                    <select class="form__study-level" name="study-level" id="study-level">
+                        <option value="undergraduat">Choose a study level</option>
+                        <option value="undergraduat">Undergraduate</option>
+                        <option value="postgraduat">Postgraduate</option>
+                    </select>
+
+                    <div class="form__search-input">
+                        <input type="text" id="course-name" name="course-name" class="search-input" placeholder="Search for a course...">
+                        <button class="flex space-around"><img src="images/icons/search-icon.svg" alt="search"> Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>

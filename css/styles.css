@@ -12,6 +12,38 @@ a, p, label {
   color: #0A2740;
 }
 
+input, select, button {
+  -webkit-appearance: none;
+  outline-style: none;
+  border: none;
+  border-radius: 0px;
+}
+
+.white-color {
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.flex {
+  display: flex;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
 .button {
   background: #851DE0;
   color: #ffffff;
@@ -121,11 +153,11 @@ a, p, label {
 }
 .header .slider-dots {
   position: absolute;
-  bottom: 20px;
+  bottom: 120px;
   left: 50%;
   transform: translateX(-50%);
   padding: 7px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-flow: row wrap;
   border-radius: 3px;
@@ -144,6 +176,45 @@ a, p, label {
 }
 .header .slider-dots .dot:hover {
   opacity: 1;
+}
+.header .form-wrapper {
+  padding: 20px 0;
+  background: rgba(87, 7, 140, 0.9);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.header .form-wrapper .form {
+  grid-template-columns: 150px 350px 1fr;
+  align-items: center;
+}
+.header .form-wrapper .form .form__study-level {
+  background: #ffffff url("../images/icons/arrow-down.svg") no-repeat 10px;
+  background-position: 95% center;
+  background-size: 16px;
+  padding: 20px;
+}
+.header .form-wrapper .form .form__search-input {
+  position: relative;
+  height: 100%;
+}
+.header .form-wrapper .form .form__search-input .search-input {
+  width: calc(100% - 40px);
+  padding: 20px;
+}
+.header .form-wrapper .form .form__search-input button {
+  position: absolute;
+  border-left: 1px solid #F5F5F5;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+.header .form-wrapper .form .form__search-input button img {
+  width: 16px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

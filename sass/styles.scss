@@ -87,11 +87,11 @@
 
     .slider-dots {
         position: absolute;
-        bottom: 20px;
+        bottom: 120px;
         left: 50%;
         transform: translateX(-50%);
         padding: 7px;
-        background: transparentize($black, .6);
+        background: transparentize($black, .5);
         display: flex;
         flex-flow: row wrap;
         border-radius: 3px;
@@ -111,6 +111,52 @@
 
             &:hover {
                 opacity: 1;
+            }
+        }
+    }
+
+    .form-wrapper {
+        padding: 20px 0;
+        background: transparentize($secondary-color, .1);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        .form {
+            grid-template-columns: 150px 350px 1fr;
+            align-items: center;
+
+            .form__study-level {
+                background: $white url('../images/icons/arrow-down.svg') no-repeat 10px;
+                background-position: 95% center;
+                background-size: 16px;
+                padding: 20px;
+            }
+
+            .form__search-input {
+                position: relative;
+                height: 100%;
+
+                .search-input {
+                    width: calc(100% - 40px);
+                    padding: 20px;
+                }
+                
+                button {
+                    position: absolute;
+                    border-left: 1px solid $gray;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    align-items: center;
+                    font-size: 16px;
+                    padding: 10px 20px;
+
+                    img {
+                        width: 16px;
+                        margin-right: 10px;
+                    }
+                }
             }
         }
     }
