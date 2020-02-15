@@ -29,15 +29,16 @@ a, p, label {
   justify-content: space-between;
   align-items: center;
 }
-.nav .nav__logo-section {
-  width: 365px;
-}
 .nav .nav__logo-section img, .nav .nav__logo-section .department {
   display: inline-block;
   margin: 0;
 }
 .nav .nav__logo-section img {
-  width: 200px;
+  width: 100px;
+  margin-right: 20px;
+}
+.nav .nav__logo-section .department {
+  font-size: 1.05em;
 }
 .nav .list {
   list-style: none;

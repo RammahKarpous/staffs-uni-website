@@ -1,6 +1,7 @@
 @import 'mixins';
 @import 'variables';
 
+// Navigation
 .nav {
 
     .wrapper, .nav__logo-section a, .list {
@@ -11,7 +12,6 @@
     }
 
     .nav__logo-section {
-        width: 365px;
 
         img, .department {
             display: inline-block;
@@ -19,7 +19,12 @@
         }
 
         img {
-            width: 128px;
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        .department {
+            font-size: 1.05em;
         }
     }
 
@@ -35,3 +40,5 @@
         }
     }
 }
+
+// Banner
