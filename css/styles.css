@@ -12,10 +12,31 @@ a, p, label {
   color: #0A2740;
 }
 
+.button {
+  background: #851DE0;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 18px 32px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.button:hover {
+  background: #781ac9;
+}
+
 .header {
   position: relative;
   width: 100%;
-  margin-top: -43px;
+  margin-top: -20px;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+.header .page-heading {
+  font-size: 5em;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .header--small {
@@ -64,15 +85,65 @@ a, p, label {
 }
 
 .header {
-  background: #eeeeee;
+  background: url("../images/headers/gallery-images/success.jpg");
 }
 .header .header__slide-timer {
-  height: 3px;
+  height: 5px;
   position: absolute;
   top: 0;
   left: 0;
   width: 30%;
   background: #851DE0;
+}
+.header .header-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  transform: translateY(-50%);
+}
+.header .slider__arrows {
+  position: absolute;
+  top: 50%;
+  opacity: 0.5;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.header .slider__arrows:hover {
+  opacity: 1;
+}
+.header .slider__arrow--left {
+  left: 20px;
+}
+.header .slider__arrow--right {
+  right: 20px;
+}
+.header .slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 7px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 3px;
+}
+.header .slider-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 0.5;
+  margin: 0 7px;
+  cursor: pointer;
+}
+.header .slider-dots .dot.is-active {
+  opacity: 1;
+}
+.header .slider-dots .dot:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

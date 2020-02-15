@@ -12,10 +12,31 @@ a, p, label {
   color: #0A2740;
 }
 
+.button {
+  background: #851DE0;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 18px 32px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.button:hover {
+  background: #781ac9;
+}
+
 .header {
   position: relative;
   width: 100%;
-  margin-top: -43px;
+  margin-top: -20px;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+.header .page-heading {
+  font-size: 5em;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .header--small {
