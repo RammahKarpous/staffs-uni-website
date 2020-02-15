@@ -9,13 +9,21 @@ a {
 }
 
 a, p, label {
-  color: #232A36;
+  color: #0A2740;
 }
 
 .header {
+  position: relative;
   width: 100%;
-  height: 520px;
-  overflow: hidden;
+  margin-top: -43px;
+}
+
+.header--small {
+  width: 500px;
+}
+
+.header--big {
+  height: 800px;
 }
 
 .wrapper {

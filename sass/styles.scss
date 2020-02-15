@@ -3,6 +3,8 @@
 
 // Navigation
 .nav {
+    position: relative;
+    z-index: 1;
 
     .wrapper, .nav__logo-section a, .list {
         display: flex;
@@ -42,3 +44,15 @@
 }
 
 // Banner
+.header {
+    background: #eeeeee;
+
+    .header__slide-timer {
+        height: 3px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        background: $main-color;
+    }
+}
