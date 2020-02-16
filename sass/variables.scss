@@ -136,6 +136,7 @@ input, select, button {
     margin: 0;
     color: $white;
     text-shadow: 0px 0px 10px transparentize($black, 0.7);
+    text-transform: uppercase;
 }
 
 .section-heading {

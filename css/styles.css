@@ -115,6 +115,7 @@ input, select, button {
   margin: 0;
   color: #ffffff;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
 }
 
 .section-heading {

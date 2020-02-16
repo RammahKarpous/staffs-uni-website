@@ -6,3 +6,5 @@ not_working_links.forEach((not_working) => {
         alert('This page will be coming soon');
     });
 });
+
+// Slider functionality
