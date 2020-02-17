@@ -41,9 +41,13 @@ input, select, button {
     border-radius: 0px;
 }
 
-
+// Colours
 .white-color {
     color: $white;
+}
+
+.white-bg {
+    background: $white;
 }
 
 // Display
@@ -107,9 +111,6 @@ input, select, button {
     position: relative;
     width: 100%;
     margin-top: -20px;
-    background-position: center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
 }
 
 .header--small {
@@ -118,6 +119,12 @@ input, select, button {
 
 .header--big {
     height: 800px;
+}
+
+.bg-img-properties {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 
 // Containers
@@ -142,4 +149,9 @@ input, select, button {
 .section-heading {
     text-transform: uppercase;
     font-size: 40px;
+}
+
+.third-heading {
+    margin: 5px 0;
+    font-size: 35px;
 }

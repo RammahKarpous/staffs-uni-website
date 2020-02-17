@@ -204,3 +204,91 @@
 }
 
 // Courses styling
+.course-wrapper {
+    height: 400px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+
+    &.grid-span {
+        grid-column: 1 / 3;
+    }
+
+    $transitioning: .3s cubic-bezier(.58,.01,.41,.99);
+    .course__bg-overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: transparentize($black, .7);
+        transition: $transitioning;
+    }
+
+    .course__contents {
+        position: relative;
+        z-index: 1;
+        margin-top: 368px;
+        transition: $transitioning;
+
+        $circleSize: 50px;
+        .expand-collapse {
+            height: $circleSize;
+            width: $circleSize;
+            border: 2px solid $white;
+            border-radius: 50%;
+            position: relative;
+
+            div {
+                position: absolute;
+                background: $white;
+            }
+
+            $plusMinusWidth: 80%;
+            .plus {
+                height: $plusMinusWidth;
+                width: 5px;
+            }
+
+            .minus {
+                width: $plusMinusWidth;
+                height: 5px;
+            }
+
+        }
+
+        .course__study-levels-wrapper {
+
+            div {
+                margin: 5px 0;
+                padding: 10px;
+                opacity: 0;
+                transition: $transitioning;
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    @include minWidth(1500px) {
+        &:hover {
+            .course__contents {
+                margin-top: 0;
+
+                .course__study-levels-wrapper div {
+                    opacity: 1;
+                }
+            }
+
+            .course__bg-overlay {
+                background: transparentize($main-color, .05);
+            }
+        }
+
+        .expand-collapse {
+            display: none;
+        }
+    }
+}
