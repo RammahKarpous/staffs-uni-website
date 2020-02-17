@@ -10,6 +10,7 @@ a {
 
 a, p, label {
   color: #0A2740;
+  font-size: 16px;
 }
 
 .alt-link {
@@ -46,6 +47,10 @@ input, select, button {
 
 .grid-2 {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .flex {
@@ -86,6 +91,31 @@ input, select, button {
 }
 .button:hover {
   background: #781ac9;
+}
+
+.dots {
+  padding: 7px;
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 3px;
+  justify-content: space-around;
+  width: 100px;
+  margin: auto;
+}
+.dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 0.5;
+  margin: 0 7px;
+  cursor: pointer;
+}
+.dots .dot.is-active {
+  opacity: 1;
+}
+.dots .dot:hover {
+  opacity: 1;
 }
 
 .header {
@@ -133,6 +163,14 @@ input, select, button {
 .third-heading {
   margin: 5px 0;
   font-size: 35px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
 }
 
 /*# sourceMappingURL=variables.css.map */
