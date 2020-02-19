@@ -12,7 +12,7 @@
 <body>
     <nav class="nav">
         <div class="wrapper">
-            <div class="nav__logo-section">
+            <div class="logo-section">
                 <a href="/"><img src="images/icons/logo-icon.svg" alt="Staffordshire University logo">
                 <h6 class="department">Department Of Computing</h6></a>
             </div>
@@ -25,12 +25,12 @@
         </div>
     </nav>
 
-    <header class="header header--big bg-img-properties">
+    <header class="header header--big header--home bg-img-properties">
         <div class="header__slide-timer"></div>
 
         <div class="header-content">
             <h1 class="page-heading">We thrive to success</h1>
-            <a href="#" class="button button--large">Book an open event</a>
+            <a href="/courses.html" class="button button--large">See our courses</a>
         </div>
 
         <img src="images/icons/banner-arrow-left.svg" alt="Arrow left" class="slider__arrow--left slider__arrows">
@@ -48,14 +48,14 @@
                 <form class="form grid">
                     <label for="course-name" class="white-color">Search courses</label>
 
-                    <select class="form__study-level" name="study-level" id="study-level">
+                    <select class="form__study-level" name="study-level" id="study-level" required>
                         <option value="" disabled selected>Choose a study level</option>
                         <option value="undergraduat">Undergraduate</option>
                         <option value="postgraduat">Postgraduate</option>
                     </select>
 
                     <div class="form__search-input">
-                        <input type="text" id="course-name" name="course-name" class="search-input" placeholder="Search for a course...">
+                        <input type="text" id="course-name" name="course-name" class="search-input" placeholder="Search for a course..." required>
                         <button class="flex space-around"><img src="images/icons/search-icon.svg" alt="search"> Search</button>
                     </div>
                 </form>
@@ -262,10 +262,67 @@
     </article>
 
     <footer class="section">
-        <div class="wrapper grid grid-3">
+        <div class="wrapper grid grid-2">
+            <div class="footer__contact-info">
+                <div class="logo-section flex align-center">
+                    <a href="/"><img src="images/icons/logo-icon.svg" alt="Logo icon">
+                    <h6 class="white-color department">Department of Computing</h6></a>
+                </div>
 
+                <div class="contact-info mt-60">
+                    <p class="white-color">Staffordshire University</p>
+                    <p class="white-color">College Road</p>
+                    <p class="white-color">University Quarter</p>
+                    <p class="white-color">Stoke-on-Trent</p>
+                    <p class="white-color">Staffordshire ST4 2DE</p>
+                </div>
+
+                <div class="mt-60">
+                    <a class="white-color" href="#">Contact</a>
+                </div>
+            </div>
+
+            <div class="grid grid-2 footer__links">
+                <div class="study pt-30">
+                    <h3 class="white-color">Study</h3>
+
+                    <nav class="footer__nav">
+                        <ul>
+                            <li><a href="#">Undergraduate</a></li>
+                            <li><a href="#">Postgraduate</a></li>
+                            <li><a href="#">Part-time</a></li>
+                            <li><a href="#">Full-time</a></li>
+                            <li><a href="#">Placement year</a></li>
+                            <li><a href="#">Foundation year</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="search pt-30">
+                    <h3 class="white-color">Search</h3>
+
+                    <nav class="footer__nav">
+                        <ul>
+                            <li><a href="#">A-z Courses</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <form class="footer__subscribe-form">
+                    <h3 class="white-color">Subscribe</h3>
+                    <p class="white-color">Subscribe to our newsletter</p>
+
+                    <div class="input-field">
+                        <input type="email" name="email" id="email" placeholder="johndoe@example.com">
+                        <input type="submit" class="button" value="Subscribe">
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
+
 
     <script src="js/script.js"></script>
 </body>

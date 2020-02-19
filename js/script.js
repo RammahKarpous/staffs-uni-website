@@ -1,3 +1,4 @@
+// Showing message on non-existing pages
 let not_working_links = document.querySelectorAll('.nav__link--not-working');
 
 not_working_links.forEach((not_working) => {
@@ -8,3 +9,16 @@ not_working_links.forEach((not_working) => {
 });
 
 // Slider functionality
+
+
+// Courses content toggle
+let expandCollapseToggleButtons = document.querySelectorAll('.expand-collapse');
+
+expandCollapseToggleButtons.forEach((button) =>  {
+    button.addEventListener('click', (e) => {
+        e.parentElement.classList.add("active");
+    });
+});
+
+// Form validation
+let

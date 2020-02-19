@@ -13,6 +13,23 @@ a, p, label {
   font-size: 16px;
 }
 
+.logo-section a {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.logo-section img, .logo-section .department {
+  display: inline-block;
+  margin: 0;
+}
+.logo-section img {
+  width: 100px;
+  margin-right: 20px;
+}
+.logo-section .department {
+  font-size: 1.05em;
+}
+
 .alt-link {
   color: #57078C;
   display: inline-block;
@@ -26,6 +43,14 @@ input, select, button {
   outline-style: none;
   border: none;
   border-radius: 0px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.pt-30 {
+  padding-top: 30px;
 }
 
 .white-color {
@@ -51,6 +76,10 @@ input, select, button {
 
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .flex {
@@ -125,7 +154,13 @@ input, select, button {
 }
 
 .header--small {
-  width: 500px;
+  height: 500px;
+}
+.header--small .wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
 }
 
 .header--big {
@@ -141,6 +176,11 @@ input, select, button {
 .wrapper {
   width: 1520px;
   margin: auto;
+}
+@media only screen and (max-width: 1620px) {
+  .wrapper {
+    width: calc(100% - 100px);
+  }
 }
 
 .section {

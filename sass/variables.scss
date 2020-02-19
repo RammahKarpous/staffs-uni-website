@@ -26,6 +26,28 @@ a, p, label {
     font-size: 16px;
 }
 
+.logo-section {
+
+    a {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    img, .department {
+        display: inline-block;
+        margin: 0;
+    }
+
+    img {
+        width: 100px;
+        margin-right: 20px;
+    }
+
+    .department {
+        font-size: 1.05em;
+    }
+}
+
 .alt-link {
     color: $secondary-color;
     display: inline-block;
@@ -40,6 +62,15 @@ input, select, button {
     outline-style: none;
     border: none;
     border-radius: 0px;
+}
+
+// Spaceing
+.mt-60 {
+    margin-top: 60px;
+}
+
+.pt-30 {
+    padding-top: 30px;
 }
 
 // Colours
@@ -67,6 +98,10 @@ input, select, button {
 
 .grid-3 {
     grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .flex {
@@ -147,7 +182,14 @@ input, select, button {
 }
 
 .header--small {
-    width: 500px;
+    height: 500px;
+
+    .wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+    }
 }
 
 .header--big {
@@ -164,6 +206,10 @@ input, select, button {
 .wrapper {
     width: 1520px;
     margin: auto;
+
+    @include maxWidth(1620px) {
+        width: calc(100% - 100px);
+    }
 }
 
 .section {
