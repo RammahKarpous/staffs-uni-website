@@ -22,6 +22,10 @@
             display: inline-block;
             padding: 20px;
             font-weight: 700;
+
+            &:hover {
+                color: $main-color;
+            }
         }
     }
 }
@@ -186,6 +190,10 @@
                 }
             }
         }
+    }
+
+    .dots {
+        margin: 30px auto 0;
     }
 
     @include maxWidth(900px) {
@@ -376,12 +384,25 @@
             padding: 0 20px 20px;
         }
     }
+
+    .dots {
+        margin-top: 30px;
+
+        .dot {
+            background: $fourth-color;
+        }
+    }
 }
 
 // Instagram styling
 .instagram {
     img {
         width: 100%;
+    }
+
+    a {
+        margin-top: 10px;
+        display: block;
     }
 }
 

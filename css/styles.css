@@ -45,6 +45,14 @@ input, select, button {
   border-radius: 0px;
 }
 
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-30 {
+  margin-top: 10px;
+}
+
 .mt-60 {
   margin-top: 60px;
 }
@@ -59,6 +67,10 @@ input, select, button {
 
 .white-bg {
   background: #ffffff;
+}
+
+.block {
+  display: block;
 }
 
 .grid {
@@ -129,7 +141,8 @@ input, select, button {
   border-radius: 3px;
   justify-content: space-around;
   width: 100px;
-  margin: auto;
+  margin: 10px auto 0;
+  background: rgba(10, 39, 64, 0.5);
 }
 .dots .dot {
   width: 10px;
@@ -145,6 +158,18 @@ input, select, button {
 }
 .dots .dot:hover {
   opacity: 1;
+}
+.dots.inverted {
+  background: transparent;
+}
+.dots.inverted .dot {
+  background: #0A2740;
+}
+.dots.inverted--light {
+  background: transparent;
+}
+.dots.inverted--light .dot {
+  background: #ffffff;
 }
 
 .header {
@@ -242,6 +267,9 @@ input, select, button {
   display: inline-block;
   padding: 20px;
   font-weight: 700;
+}
+.nav .list .link:hover {
+  color: #851DE0;
 }
 
 .header.header--home {
@@ -377,6 +405,9 @@ input, select, button {
     margin-right: 10px;
     font-size: 2em;
   }
+}
+.events-section .dots {
+  margin: 30px auto 0;
 }
 @media only screen and (max-width: 900px) {
   .events-section section {
@@ -521,9 +552,19 @@ input, select, button {
 .news .news__wrapper .news__content {
   padding: 0 20px 20px;
 }
+.news .dots {
+  margin-top: 30px;
+}
+.news .dots .dot {
+  background: #0A2740;
+}
 
 .instagram img {
   width: 100%;
+}
+.instagram a {
+  margin-top: 10px;
+  display: block;
 }
 
 footer {

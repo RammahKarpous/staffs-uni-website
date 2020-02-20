@@ -1,5 +1,5 @@
 // Showing message on non-existing pages
-let not_working_links = document.querySelectorAll('.nav__link--not-working');
+let not_working_links = document.querySelectorAll('a[href="#"]');
 
 not_working_links.forEach((not_working) => {
     not_working.addEventListener('click', (e) => {

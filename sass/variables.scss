@@ -65,6 +65,14 @@ input, select, button {
 }
 
 // Spaceing
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-30 {
+    margin-top: 10px;
+}
+
 .mt-60 {
     margin-top: 60px;
 }
@@ -83,6 +91,10 @@ input, select, button {
 }
 
 // Display
+.block {
+    display: block;
+}
+
 .grid {
     display: grid;
     gap: 20px;
@@ -153,7 +165,8 @@ input, select, button {
     border-radius: 3px;
     justify-content: space-around;
     width: 100px;
-    margin: auto;
+    margin: 10px auto 0;
+    background: transparentize($fourth-color, .5);
 
     .dot {
         width: 10px;
@@ -170,6 +183,22 @@ input, select, button {
 
         &:hover {
             opacity: 1;
+        }
+    }
+
+    &.inverted {
+        background: transparent;
+
+        .dot {
+            background: $fourth-color;
+        }
+    }
+
+    &.inverted--light {
+        background: transparent;
+
+        .dot {
+            background: $white;
         }
     }
 }
