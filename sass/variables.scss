@@ -212,6 +212,15 @@ input, select, button {
     }
 }
 
+.narrow-wrapper {
+    width: 1160px;
+    margin: auto;
+
+    @include maxWidth(1620px) {
+        width: calc(100% - 100px);
+    }
+}
+
 .section {
     margin-top: 150px;
 }

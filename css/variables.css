@@ -183,6 +183,16 @@ input, select, button {
   }
 }
 
+.narrow-wrapper {
+  width: 1160px;
+  margin: auto;
+}
+@media only screen and (max-width: 1620px) {
+  .narrow-wrapper {
+    width: calc(100% - 100px);
+  }
+}
+
 .section {
   margin-top: 150px;
 }

@@ -345,6 +345,47 @@
     }
 }
 
+// News styling
+.news {
+    .news__thumbnail {
+        height: 300px;
+        width: 100%;
+    }
+
+    .news__wrapper {
+        position: relative;
+        background: $gray;
+
+        &:first-child .news__thumbnail {
+            background: url('../images/thumbnails/news-block-1.jpg');
+        }
+        &:last-child .news__thumbnail {
+            background: url('../images/thumbnails/news-block-2.jpg');
+        }
+
+        .news__date {
+            background: $main-color;
+            padding: 13px 25px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: $white;
+        }
+
+        .news__content {
+            padding: 0 20px 20px;
+        }
+    }
+}
+
+// Instagram styling
+.instagram {
+    img {
+        width: 100%;
+    }
+}
+
+// Footer styling
 footer {
     background: $fourth-color;
     padding-bottom: 30px;

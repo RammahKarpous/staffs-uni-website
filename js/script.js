@@ -21,4 +21,3 @@ expandCollapseToggleButtons.forEach((button) =>  {
 });
 
 // Form validation
-let
