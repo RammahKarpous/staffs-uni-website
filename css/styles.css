@@ -45,6 +45,10 @@ input, select, button {
   border-radius: 0px;
 }
 
+.no-margin {
+  margin: 0;
+}
+
 .mt-10 {
   margin-top: 10px;
 }
@@ -413,6 +417,11 @@ input, select, button {
   .events-section section {
     grid-template-columns: 1fr;
   }
+}
+
+.courses .overview {
+  width: 90%;
+  margin-bottom: 40px;
 }
 
 .course-wrapper {
