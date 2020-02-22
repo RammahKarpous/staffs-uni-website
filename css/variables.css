@@ -73,6 +73,10 @@ input, select, button {
   background: #ffffff;
 }
 
+.gray-bg {
+  background: #F5F5F5;
+}
+
 .block {
   display: block;
 }

@@ -73,6 +73,10 @@ input, select, button {
   background: #ffffff;
 }
 
+.gray-bg {
+  background: #F5F5F5;
+}
+
 .block {
   display: block;
 }
@@ -281,6 +285,9 @@ input, select, button {
 }
 .header.header--courses {
   background: url("../images/headers/students.jpg");
+}
+.header.header--web-development {
+  background: url("../images/thumbnails/web-development.jpg");
 }
 .header .header__slide-timer {
   height: 5px;
