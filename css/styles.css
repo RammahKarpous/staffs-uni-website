@@ -65,6 +65,10 @@ input, select, button {
   padding-top: 30px;
 }
 
+.p-60 {
+  padding: 60px;
+}
+
 .white-color {
   color: #ffffff;
 }
@@ -527,6 +531,16 @@ input, select, button {
     grid-column: 1;
   }
 }
+.course-overview {
+  width: calc(100% - 120px);
+}
+.course-overview .tag {
+  padding: 10px 15px;
+  display: inline-block;
+  margin: 5px 10px 0px 0px;
+  background: #851DE0;
+}
+
 .testimonials .testimonial-wrapper {
   background: #57078C;
   padding: 50px;

@@ -65,6 +65,10 @@ input, select, button {
   padding-top: 30px;
 }
 
+.p-60 {
+  padding: 60px;
+}
+
 .white-color {
   color: #ffffff;
 }

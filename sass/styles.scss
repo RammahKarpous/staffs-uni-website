@@ -338,6 +338,18 @@
     }
 }
 
+// Individual courses
+.course-overview {
+    width: calc(100% - 120px);
+
+    .tag {
+        padding: 10px 15px;
+        display: inline-block;
+        margin: 5px 10px 0px 0px;
+        background: $main-color;
+    }
+}
+
 // Testimonial styling
 .testimonials {
     .testimonial-wrapper {
