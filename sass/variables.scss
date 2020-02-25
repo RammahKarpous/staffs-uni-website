@@ -85,6 +85,10 @@ input, select, button {
     padding-top: 30px;
 }
 
+.p-10 {
+    padding: 10px;
+}
+
 .p-60 {
     padding: 60px;
 }
@@ -100,6 +104,10 @@ input, select, button {
 
 .gray-bg {
     background: $gray;
+}
+
+.dark-purple-bg {
+    background: $secondary-color;
 }
 
 // Display
@@ -164,6 +172,7 @@ input, select, button {
     padding: 18px 32px;
     display: inline-block;
     transition: .3s;
+    cursor: pointer;
 
     &:hover {
         background: darken($main-color, 5%);

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,14 @@
 
     <title>Staffordshire University | Department Of Computing</title>
 </head>
+
 <body>
     <nav class="nav">
         <div class="wrapper">
             <div class="logo-section">
                 <a href="/"><img src="../images/icons/logo-icon.svg" alt="Staffordshire University logo">
-                    <h6 class="department">Department Of Computing</h6></a>
+                    <h6 class="department">Department Of Computing</h6>
+                </a>
             </div>
             <ul class="list">
                 <li class="item"><a href="/" class="link">Home</a></li>
@@ -33,21 +36,103 @@
     </header>
 
     <article class="section wrapper">
-      <section class="course-overview gray-bg p-60">
-        <h2 class="section-heading no-margin">Course Overiew</h2>
+        <section class="course-overview gray-bg p-60">
+            <h2 class="section-heading no-margin">Course Overiew</h2>
 
-        <p class="overview">Specialise in the design and development of applications using web and mobile technologies. You will learn HTML, CSS, ECMAScript/JavaScript to create interactive user experiences.  What’s more, you’ll see how current frameworks can aid with effective design for a multitude of devices and environments. You’ll learn client-side and server-side development, for use with the developing applications.</p>
+            <p class="overview">Specialise in the design and development of applications using web and mobile
+                technologies. You will learn HTML, CSS, ECMAScript/JavaScript to create interactive user experiences. 
+                What’s more, you’ll see how current frameworks can aid with effective design for a multitude of devices
+                and environments. You’ll learn client-side and server-side development, for use with the developing
+                applications.</p>
 
-        <h3 class="no-margin mt-10">Pathways</h3>
-        <div class="path-ways flex row white-color">
-          <div class="tag">IBM</div>
-          <div class="tag">Jaguar</div>
-          <div class="tag">BMW</div>
-          <div class="tag">NASA</div>
-          <div class="tag">Amazon</div>
-          <div class="tag">Kanuka Digital</div>
+            <h3 class="no-margin mt-10">Pathways</h3>
+            <div class="path-ways flex row white-color">
+                <div class="tag">IBM</div>
+                <div class="tag">Jaguar</div>
+                <div class="tag">BMW</div>
+                <div class="tag">NASA</div>
+                <div class="tag">Amazon</div>
+                <div class="tag">Kanuka Digital</div>
+            </div>
+        </section>
+    </article>
+
+    <article class="section wrapper modules">
+        <h3 class="section-heading">Modules</h3>
+        <form class="buttons flex mt-10">
+            <div class="input-field">
+                <input type="radio" name="modules" id="year-1" class="module-input" value="year-1" checked>
+                <label for="year-1" class="white-color module-label button">Year 1</label>
+
+            </div>
+
+            <div class="input-field">
+                <input type="radio" name="modules" id="year-2" class="module-input" value="year-2">
+                <label for="year-2" class="white-color module-label button">Year 2</label>
+            </div>
+
+            <div class="input-field">
+                <input type="radio" name="modules" id="year-3" class="module-input" value="year-3">
+                <label for="year-3" class="white-color module-label button">Year 3</label>
+            </div>
+        </form>
+        
+        <div class="module-info--list grid grid-2 year-1">
+
+            <h4 class="p-10 dark-purple-bg white-color no-margin mt-10">Compulsary modules</h4>
+            <h4 class="p-10 dark-purple-bg white-color no-margin mt-10">Optional modules</h4>
+
+            <!-- Compulsory modules -->
+            <div class="module-info--items">
+                <div class="cumpulsary-modules module-info--item">
+                    <div class="module-info--module flex space-between">
+                        <p>Introduction to HTML and CSS</p>
+                        <p>30 Credits</p>
+                    </div>
+                </div>
+
+                <div class="cumpulsary-modules module-info--item">
+                    <div class="module-info--module flex space-between">
+                        <p>Introduction to Server-Side Programming</p>
+                        <p>30 Credits</p>
+                    </div>
+                </div>
+
+                <div class="cumpulsary-modules module-info--item">
+                    <div class="module-info--module flex space-between">
+                        <p>Introduction to Database modelling</p>
+                        <p>30 Credits</p>
+                    </div>
+                </div>
+
+                <div class="cumpulsary-modules module-info--item">
+                    <div class="module-info--module flex space-between">
+                        <p>Introduction to Frameworks</p>
+                        <p>30 Credits</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End compulsory modules -->
+
+            <!-- Optional modules -->
+            <div class="module-info--items flex column">
+                <div class="optional-modules module-info--item">
+                    <div class="module-info flex space-between">
+                        <p>Animation on the web</p>
+                        <p>30 Credits</p>
+                    </div>
+                </div>
+
+                <div class="optional-modules module-info--item">
+                    <div class="module-info flex space-between">
+                        <p>Introduction to Server-Side Programming</p>
+                        <p>30 Credits</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End optional modules -->
         </div>
-      </section>
+        
     </article>
 
     <footer class="section">
@@ -55,7 +140,8 @@
             <div class="footer__contact-info">
                 <div class="logo-section flex align-center">
                     <a href="/"><img src="../images/icons/logo-icon.svg" alt="Logo icon">
-                        <h6 class="white-color department">Department of Computing</h6></a>
+                        <h6 class="white-color department">Department of Computing</h6>
+                    </a>
                 </div>
 
                 <div class="contact-info mt-60">
@@ -119,4 +205,5 @@
 
     <script src="../js/script.js"></script>
 </body>
+
 </html>

@@ -209,86 +209,107 @@
     width: 90%;
     margin-bottom: 40px;
 }
-
-.course-wrapper {
-    height: 400px;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
+.course-link {
 
     &.grid-span {
         grid-column: 1 / 3;
     }
 
-    $transitioning: .3s cubic-bezier(.58,.01,.41,.99);
-    .course__bg-overlay {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: transparentize($black, .7);
-        transition: $transitioning;
-    }
-
-    .course__contents {
+    .course-wrapper {
+        height: 400px;
+        padding: 20px;
         position: relative;
-        z-index: 1;
-        margin-top: 368px;
-        transition: $transitioning;
+        overflow: hidden;
 
-        $circleSize: 40px;
-        .expand-collapse {
-            height: $circleSize;
-            width: $circleSize;
-            border: 2px solid $white;
-            border-radius: 50%;
-            position: relative;
-            margin: auto;
-
-            div {
-                position: absolute;
-                background: $white;
-            }
-
-            $plusMinusHeight: 70%;
-            $plusMinusWidth: 3px;
-
-            .plus {
-                height: $plusMinusHeight;
-                width: $plusMinusWidth;
-            }
-
-            .minus {
-                width: $plusMinusHeight;
-                height: $plusMinusWidth;
-            }
-
+        $transitioning: .3s cubic-bezier(.58,.01,.41,.99);
+        .course__bg-overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: transparentize($black, .7);
+            transition: $transitioning;
         }
 
-        .course__study-levels-wrapper {
-            gap: 10px 20px;
-            margin-bottom: 10px;
+        .course__contents {
+            position: relative;
+            z-index: 1;
+            margin-top: 368px;
+            transition: $transitioning;
 
-            div {
-                margin: 5px 0;
-                padding: 10px;
-                opacity: 0;
-                transition: $transitioning;
+            $circleSize: 40px;
+            .expand-collapse {
+                height: $circleSize;
+                width: $circleSize;
+                border: 2px solid $white;
+                border-radius: 50%;
+                position: relative;
+                margin: auto;
 
-                p {
-                    margin: 0;
+                div {
+                    position: absolute;
+                    background: $white;
+                }
+
+                $plusMinusHeight: 70%;
+                $plusMinusWidth: 3px;
+
+                .plus {
+                    height: $plusMinusHeight;
+                    width: $plusMinusWidth;
+                }
+
+                .minus {
+                    width: $plusMinusHeight;
+                    height: $plusMinusWidth;
+                }
+
+            }
+
+            .course__study-levels-wrapper {
+                gap: 10px 20px;
+                margin-bottom: 10px;
+
+                div {
+                    margin: 5px 0;
+                    padding: 10px;
+                    opacity: 0;
+                    transition: $transitioning;
+
+                    p {
+                        margin: 0;
+                    }
                 }
             }
         }
-    }
 
-    @include minWidth(1500px) {
+        @include minWidth(1500px) {
 
-        &:hover {
+            &:hover {
+                .course__contents {
+                    margin-top: 0;
+
+
+                    .course__study-levels-wrapper div {
+                        opacity: 1;
+                    }
+                }
+
+                .course__bg-overlay {
+                    background: transparentize($main-color, .05);
+                }
+            }
+
+            .expand-collapse {
+                display: none;
+            }
+        }
+        @include maxWidth(1500px) {
             .course__contents {
+                text-align: center;
+                //margin-top: 300px;
                 margin-top: 0;
-
 
                 .course__study-levels-wrapper div {
                     opacity: 1;
@@ -298,31 +319,11 @@
             .course__bg-overlay {
                 background: transparentize($main-color, .05);
             }
+
+
         }
-
-        .expand-collapse {
-            display: none;
-        }
-    }
-    @include maxWidth(1500px) {
-        .course__contents {
-            text-align: center;
-            //margin-top: 300px;
-            margin-top: 0;
-
-            .course__study-levels-wrapper div {
-                opacity: 1;
-            }
-        }
-
-        .course__bg-overlay {
-            background: transparentize($main-color, .05);
-        }
-
-
     }
 }
-
 @include maxWidth(930px) {
     .courses-wrapper {
         grid-template-columns: 1fr !important;
@@ -347,6 +348,55 @@
         display: inline-block;
         margin: 5px 10px 0px 0px;
         background: $secondary-color;
+    }
+}
+
+.modules {
+
+    .module-input {
+        display: none;
+
+        &:checked + .module-label {
+            background: $secondary-color !important;
+        }
+    }
+
+    .module-label {
+        cursor: pointer;
+        margin-right: 8px;
+    }
+
+    .input-field {
+        position: relative;
+    }
+
+    .module-info--list {
+        
+        .module-info--item {
+            background: darken($gray, 7%);
+            padding: 5px 20px;
+            opacity: 0;
+            
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+
+            &:hover {
+            background: darken($gray, 12%);
+            }
+        }
+
+        &.show-modules {
+            .module-info--item {
+                padding: 5px 20px;
+                transition: .1s;
+                opacity: 1;
+                
+                &:not(:first-child) {
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 }
 

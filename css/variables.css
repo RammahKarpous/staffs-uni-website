@@ -65,6 +65,10 @@ input, select, button {
   padding-top: 30px;
 }
 
+.p-10 {
+  padding: 10px;
+}
+
 .p-60 {
   padding: 60px;
 }
@@ -79,6 +83,10 @@ input, select, button {
 
 .gray-bg {
   background: #F5F5F5;
+}
+
+.dark-purple-bg {
+  background: #57078C;
 }
 
 .block {
@@ -141,6 +149,7 @@ input, select, button {
   padding: 18px 32px;
   display: inline-block;
   transition: 0.3s;
+  cursor: pointer;
 }
 .button:hover {
   background: #781ac9;
