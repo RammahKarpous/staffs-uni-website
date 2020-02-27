@@ -185,11 +185,11 @@ input, select, button {
   flex-flow: row wrap;
   border-radius: 3px;
   justify-content: space-around;
-  width: 100px;
+  width: 100px !important;
   margin: 10px auto 0;
   background: rgba(10, 39, 64, 0.5);
 }
-.dots .dot {
+.dots .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -198,16 +198,16 @@ input, select, button {
   margin: 0 7px;
   cursor: pointer;
 }
-.dots .dot.is-active {
+.dots .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
 }
-.dots .dot:hover {
+.dots .swiper-pagination-bullet:hover {
   opacity: 1;
 }
 .dots.inverted {
   background: transparent;
 }
-.dots.inverted .dot {
+.dots.inverted .swiper-pagination-bullet {
   background: #0A2740;
 }
 .dots.inverted--light {

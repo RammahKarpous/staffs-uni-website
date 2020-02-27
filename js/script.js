@@ -20,6 +20,8 @@ let headerSwiper = new Swiper ('.swiper-container', {
     direction: 'horizontal',
     loop: true,
 
+    speed: 300,
+
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',

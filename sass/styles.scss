@@ -58,6 +58,10 @@
     &.header--courses { background: url('../images/headers/students.jpg'); }
     &.header--web-development { background: url('../images/thumbnails/web-development.jpg'); }
 
+    .swiper-wrapper {
+        z-index: -1;
+    }
+
     .header__slide-timer {
         height: 5px;
         position: absolute;
@@ -69,15 +73,11 @@
 
     .header-content {
         text-align: center;
-
-        .header--home { 
-            background: url('../images/headers/gallery-images/success.jpg');
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @extend .bg-img-properties;
     }
 
     .slider__arrows {
@@ -102,8 +102,8 @@
 
     .dots {
         position: absolute;
-        bottom: 120px;
-        left: 50%;
+        bottom: 120px !important;
+        left: 50% !important;
         transform: translateX(-50%);
         background: transparentize($black, .5);
     }
@@ -234,6 +234,7 @@
     width: 90%;
     margin-bottom: 40px;
 }
+
 .course-link {
 
     &.grid-span {
