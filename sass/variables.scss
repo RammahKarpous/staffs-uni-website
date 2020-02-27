@@ -67,6 +67,10 @@ input, select, button {
 // Spaceing
 .no-margin {
     margin: 0;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .mt-10 {
@@ -87,6 +91,10 @@ input, select, button {
 
 .p-10 {
     padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
 }
 
 .p-60 {
@@ -164,6 +172,15 @@ input, select, button {
     justify-content: flex-start;
 }
 
+// Positioning
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
 // Components
 .button {
     background: $main-color;
@@ -173,6 +190,10 @@ input, select, button {
     display: inline-block;
     transition: .3s;
     cursor: pointer;
+
+    &.button--small {
+        padding: 10px 20px;
+    }
 
     &:hover {
         background: darken($main-color, 5%);

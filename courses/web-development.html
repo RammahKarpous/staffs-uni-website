@@ -12,6 +12,12 @@
 </head>
 
 <body>
+
+    <div class="message">
+        <p>Sorry, we're working on this page. Please try another link.</p>
+        <div class="close-message button button--small">close</div>
+    </div>
+    
     <nav class="nav">
         <div class="wrapper">
             <div class="logo-section">
@@ -77,10 +83,10 @@
             </div>
         </form>
         
-        <div class="module-info--list grid grid-2 year-1">
+        <div class="module-info--list grid grid-2 year-1 show-modules">
 
-            <h4 class="p-10 dark-purple-bg white-color no-margin mt-10">Compulsary modules</h4>
-            <h4 class="p-10 dark-purple-bg white-color no-margin mt-10">Optional modules</h4>
+            <h4 class="p-20 dark-purple-bg white-color mt-10">Compulsary modules</h4>
+            <h4 class="p-20 dark-purple-bg white-color mt-10">Optional modules</h4>
 
             <!-- Compulsory modules -->
             <div class="module-info--items">
@@ -132,10 +138,39 @@
             </div>
             <!-- End optional modules -->
         </div>
-        
     </article>
 
-    <footer class="section">
+    <article class="section award-leaders p-60 gray-bg">
+        <h3 class="section-heading">Award leaders</h3>
+
+        <section class="relative wrapper relative">
+            <img src="../images/icons/black-left-arrow.png" alt="previous award leader" class="arrow left-arrow">
+            <img src="../images/icons/black-right-arrow.png" alt="next award leader" class="arrow right-arrow">
+
+            <div class="award-leader flex">
+                <img src="../images/thumbnails/award-leader-bart-van-bikkel.png" alt="Award leader image">
+
+                <div class="award-leader--info">
+                    <h3 class="third-heading">Bard van Bikkel</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis dicta quos accusamus sit, illo culpa recusandae? Tenetur itaque distinctio quas voluptas cupiditate nobis porro! Voluptas vitae veritatis deleniti dicta corporis vero repudiandae necessitatibus et itaque modi, quae suscipit laborum dolor.</p>
+                    
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed quis quae unde laboriosam eaque hic cum iusto accusantium sit cupiditate ut deserunt eum et officia, quas, voluptates expedita repellat quam mollitia ipsa excepturi sequi voluptate. Impedit repellat ab illum exercitationem!</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusantium distinctio id, maxime, totam velit cupiditate unde quod beatae atque fugiat odit praesentium natus. Quisquam corporis molestiae eos dicta, quia autem odit consequatur iure quaerat obcaecati ullam voluptatibus inventore fugiat!</p>
+                </div>
+
+            </div>
+
+            <div class="dots inverted">
+                <div class="dot is-active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </section>
+    </article>
+
+    <footer class="section no-margin">
         <div class="wrapper grid grid-2">
             <div class="footer__contact-info">
                 <div class="logo-section flex align-center">

@@ -1,6 +1,28 @@
 @import 'mixins';
 @import 'variables';
 
+// Message styling
+.message {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+    background: $white;
+    box-shadow: 0px 0px 20px transparentize($black, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+
+    &.show-message {
+        top: 50%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 // Navigation
 .nav {
     position: relative;
@@ -395,6 +417,37 @@
                 &:not(:first-child) {
                     margin-top: 10px;
                 }
+            }
+        }
+    }
+}
+
+// Award leaders section styling
+.award-leaders {
+
+    section {
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+        }
+
+        .left-arrow {
+            left: 0;
+        }
+
+        .right-arrow {
+            right: 0;
+        }
+
+        .award-leader {
+            width: calc(100% - 200px);
+            margin: auto;
+
+            img {
+                width: 250px;
+                height: 250px;
+                margin-right: 30px;
             }
         }
     }

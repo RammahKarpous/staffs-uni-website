@@ -1,11 +1,17 @@
 // Showing message on non-existing pages
 let not_working_links = document.querySelectorAll('a[href="#"]');
+let message = document.querySelector('.message');
+let closeMessage = document.querySelector('.close-message');
 
 not_working_links.forEach((not_working) => {
     not_working.addEventListener('click', (e) => {
         e.preventDefault();
-        alert('This page will be coming soon');
+        message.classList.add('show-message');
     });
+});
+
+closeMessage.addEventListener('click', () => {
+    message.classList.remove('show-message');
 });
 
 // Slider functionality
