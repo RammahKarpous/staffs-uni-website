@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
     <title>Staffordshire University | Department Of Computing</title>
 </head>
@@ -31,23 +32,35 @@
         </div>
     </nav>
 
-    <header class="header header--big header--home bg-img-properties">
+    <header class="header header--big bg-img-properties swiper-container">
         <div class="header__slide-timer"></div>
 
-        <div class="header-content">
-            <h1 class="page-heading">We thrive to success</h1>
-            <a href="/courses.html" class="button button--large">See our courses</a>
+        <div class="swiper-wrapper">
+            <div class="header-content swiper-slide">
+                <h1 class="page-heading">We thrive to success</h1>
+                <a href="/courses.html" class="button button--large">See our courses</a>
+            </div>
+
+            <div class="header-content swiper-slide">
+                <h1 class="page-heading">We thrive to success</h1>
+                <a href="/courses.html" class="button button--large">See our courses</a>
+            </div>
+
+            <div class="header-content swiper-slide">
+                <h1 class="page-heading">We thrive to success</h1>
+                <a href="/courses.html" class="button button--large">See our courses</a>
+            </div>
+
+            <div class="header-content swiper-slide">
+                <h1 class="page-heading">We thrive to success</h1>
+                <a href="/courses.html" class="button button--large">See our courses</a>
+            </div>
         </div>
 
-        <img src="images/icons/banner-arrow-left.svg" alt="Arrow left" class="slider__arrow--left slider__arrows">
-        <img src="images/icons/banner-arrow-right.svg" alt="Arrow right" class="slider__arrow--right slider__arrows">
+        <img src="images/icons/banner-arrow-left.svg" alt="Arrow left" class="swiper-button-prev slider__arrow--left slider__arrows">
+        <img src="images/icons/banner-arrow-right.svg" alt="Arrow right" class="swiper-button-next slider__arrow--right slider__arrows">
 
-        <div class="dots">
-            <div class="dot is-active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
+        <div class="dots swiper-pagination"></div>
 
         <div class="form-wrapper">
             <div class="wrapper">
@@ -336,7 +349,7 @@
         </div>
     </footer>
 
-
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
