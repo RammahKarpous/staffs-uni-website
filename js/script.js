@@ -20,12 +20,11 @@ let headerSwiper = new Swiper ('.swiper-container', {
     direction: 'horizontal',
     loop: true,
 
-    speed: 300,
+    autoplay: { delay: 3000 },
+    fadeEffect: { crossFade: true },
 
     // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
+    pagination: { el: '.swiper-pagination', },
 
     // Navigation arrows
     navigation: {

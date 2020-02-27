@@ -308,7 +308,7 @@ input, select, button {
   transition: 0.4s;
 }
 .message.show-message {
-  top: 50%;
+  top: 35%;
   opacity: 1;
   visibility: visible;
 }
