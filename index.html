@@ -25,9 +25,15 @@
             </div>
             <ul class="list">
                 <li class="item"><a href="/" class="link">Home</a></li>
-                <li class="item"><a href="/courses.html" class="link">Courses</a></li>
-                <li class="item"><a href="#" class="link nav__link--not-working">Events</a></li>
-                <li class="item"><a href="#" class="link nav__link--not-working">My timetable</a></li>
+                <li class="item"><a href="/subject-areas.html" class="link">Subject areas</a></li>
+                <li class="item item--hide"><a href="#" class="link nav__link--not-working">Events</a></li>
+                <li class="item item--hide"><a href="#" class="link nav__link--not-working">My timetable</a></li>
+                <li class="item item--show">More
+                    <ul class="sub-list">
+                        <li class="item"><a href="#" class="link nav__link--not-working">Events</a></li>
+                        <li class="item"><a href="#" class="link nav__link--not-working">My timetable</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>
@@ -38,17 +44,17 @@
         <div class="swiper-wrapper">
             <div class="header-content swiper-slide header-slide--1" style="background: url('../images/headers/success.jpg')">
                 <h1 class="page-heading">We thrive to success</h1>
-                <a href="/courses.html" class="button button--large">See our courses</a>
+                <a href="/subject-areas.html" class="button button--large">See our subject areas</a>
             </div>
 
             <div class="header-content swiper-slide header-slide--2" style="background: url('../images/headers/collaboration-2.jpg')">
                 <h1 class="page-heading">We create a collaborative environment</h1>
-                <a href="/courses.html" class="button button--large">See our courses</a>
+                <a href="/subject-areas.html" class="button button--large">See our subject areas</a>
             </div>
 
             <div class="header-content swiper-slide header-slide--3" style="background: url('../images/headers/future.png')">
                 <h1 class="page-heading">We think ahead</h1>
-                <a href="/courses.html" class="button button--large">See our courses</a>
+                <a href="/subject-areas.html" class="button button--large">See our subject areas</a>
             </div>
         </div>
 
@@ -60,7 +66,7 @@
         <div class="form-wrapper">
             <div class="wrapper">
                 <form class="form grid">
-                    <label for="course-name" class="white-color">Search courses</label>
+                    <label for="course-name" class="white-color">Search subject areas</label>
 
                     <select class="form__study-level" name="study-level" id="study-level" required>
                         <option value="" disabled selected>Choose a study level</option>
@@ -143,7 +149,16 @@
     </article>
 
     <article class="section wrapper courses">
-        <h2 class="section-heading">Courses</h2>
+        <div class="sub-area-wrapper">
+            <h2 class="section-heading">Subject areas</h2>
+            <h4 class="lead-paragraph">Become the next professional in the field of computer science. Whether it's software development, internet and web management, cloud technologies, or network computing you’re interested in, we have a pathway for you.</h4>
+
+            <p>Our department of coumputing will put you at the forefront of cutting-edge technologies. Throughout your studies you will combine knowledge of the fundamentals of computer science theory and technology with specialist learning and real-world work experience.</p>
+
+            <p>During your second and third years we provide you with the opportunity to choose from a wide range of specialism subjects within different pathways of study should or, if you prefer, you can combine specialism subjects for a broader study.</p>
+
+            <p>Here below are a few of the pathways where you can choose from: </p>
+        </div>
         <div class="grid grid-2 courses-wrapper">
             <a class="course-link" href="#">
                 <div class="course-wrapper bg-img-properties" style="background: url('images/thumbnails/cloud-computing.jpg');">
@@ -217,7 +232,7 @@
                 </div>
             </a>
 
-            <a class="course-link grid-span" href="/courses/web-development.html">
+            <a class="course-link grid-span" href="/subject-areas/web-development.html">
                 <div class="course-wrapper bg-img-properties" style="background: url('images/thumbnails/web-development.jpg');">
                     <div class="course__bg-overlay"></div>
 
@@ -254,7 +269,7 @@
             </a>
         </div>
 
-        <a href="/courses.html" class="mt-30 block">View more courses</a>
+        <a href="/subject-areas.html" class="mt-30 block">View more courses</a>
     </article>
 
     <article class="section wrapper testimonials text-center">
@@ -308,7 +323,7 @@
 
                     <nav class="footer__nav">
                         <ul>
-                            <li><a href="/courses.html">All courses</a></li>
+                            <li><a href="/subject-areas.html">All courses</a></li>
                             <li><a href="#">Undergraduate</a></li>
                             <li><a href="#">Postgraduate</a></li>
                             <li><a href="#">Part-time</a></li>
@@ -324,7 +339,7 @@
 
                     <nav class="footer__nav">
                         <ul>
-                            <li><a href="#">A-z Courses</a></li>
+                            <li><a href="#">A-z Subject areas</a></li>
                             <li><a href="#">News</a></li>
                             <li><a href="#">Events</a></li>
                         </ul>

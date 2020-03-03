@@ -35,18 +35,81 @@
         align-items: center;
     }
 
+    @include maxWidth(950px) {
+        .wrapper {
+            justify-content: center;
+        }
+    }
+
     .list {
         list-style: none;
         padding: 0;
         margin: 0;
 
-        .link {
+        .sub-list {
+            display: none;
+        }
+
+        .link, .item--show {
             display: inline-block;
             padding: 20px;
             font-weight: 700;
 
             &:hover {
                 color: $main-color;
+            }
+        }
+
+        .item--show {
+            display: none;
+            text-align: center;
+            position: relative;
+
+            .sub-list {
+                position: absolute;
+                top: -150px;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-between;
+                left: -100px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                background: $white;
+            }
+        }
+
+        @include maxWidth(950px) {
+            position: fixed;
+            bottom: 0;
+            background: #fff;
+            z-index: 1;
+            width: 100%;
+            left: 0;
+            box-shadow: 0 0 10px transparentize($fourth-color, .9);
+
+            .item {
+                width: calc(100% / 4);
+
+                &.item--show {
+                    display: inline-block;
+                    width: calc(100px - 40px);
+                }
+
+                &.item--hide {
+                    display: none;
+                }
+
+                a {
+                    width: calc(100% - 40px);
+                    text-align: center;
+                }
+            }
+        }
+
+        @include maxWidth(602px) {
+            .item {
+                width: calc(100% / 3);
             }
         }
     }
@@ -116,7 +179,7 @@
         width: 100%;
 
         .form {
-            grid-template-columns: 150px 350px 1fr;
+            grid-template-columns: 167px 350px 1fr;
             align-items: center;
 
             .form__study-level {
@@ -156,6 +219,10 @@
                 }
             }
         }
+    }
+
+    @include maxWidth(950px) {
+        z-index: -1 !important;
     }
 }
 
@@ -592,5 +659,9 @@ footer {
         .footer__contact-info, .footer__links {
             grid-column: 1 / 3;
         }
+    }
+
+    @include maxWidth(950px) {
+        padding-bottom: 100px;
     }
 }
